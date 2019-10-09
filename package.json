@@ -36,7 +36,8 @@
     "build:es": "cross-env NODE_ENV=development BABEL_ENV=es babel src/js -d es --ignore=__tests__,__mocks__",
     "build:es:watch": "npm run build:es -- -w",
     "build:umd": "node src/tools/build.js",
-    "build": "npm-run-all -p tsd css-bundles build:cjs build:es build:umd"
+    "build": "npm-run-all -p tsd css-bundles build:cjs build:es build:umd",
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
