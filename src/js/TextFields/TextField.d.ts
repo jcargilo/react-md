@@ -41,6 +41,7 @@ export interface SharedTextFieldProps {
   resize?: { min: number, max: number, disableShrink?: boolean };
   tabIndex?: number;
   autoComplete?: string;
+  readOnly?: boolean;
 
   /**
    * @deprecated
